@@ -1,0 +1,43 @@
+group 'io.tts'
+version '0.1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile "com.sun.xml.bind:jaxb-xjc:2.2.11",
+            "com.sun.xml.bind:jaxb-impl:2.2.11",
+            "com.sun.xml.bind:jaxb-core:2.2.11"
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "http://archiva.tts.io/repository/${project.version.endsWith('-SNAPSHOT') ? 'snapshots' : 'internal' }"
+            credentials {
+                username archivaUserName
+                password archivaPassword
+            }
+        }
+    }
+    //noinspection GroovyAssignabilityCheck
+    publishToMavenLocal {
+        dependsOn 'clean'
+    }
+}

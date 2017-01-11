@@ -1,0 +1,3 @@
+rootProject.name = 'tts-cxf-xjc-addons'
+include 'tts-cxf-xjc-swaggerdoc'
+

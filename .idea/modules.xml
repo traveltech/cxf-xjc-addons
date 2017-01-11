@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tts-cxf-xjc-addons.iml" filepath="$PROJECT_DIR$/.idea/modules/tts-cxf-xjc-addons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tts-cxf-xjc-swaggerdoc/tts-cxf-xjc-swaggerdoc.iml" filepath="$PROJECT_DIR$/.idea/modules/tts-cxf-xjc-swaggerdoc/tts-cxf-xjc-swaggerdoc.iml" group="tts-cxf-xjc-swaggerdoc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tts-cxf-xjc-swaggerdoc/tts-cxf-xjc-swaggerdoc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tts-cxf-xjc-swaggerdoc/tts-cxf-xjc-swaggerdoc_main.iml" group="tts-cxf-xjc-swaggerdoc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tts-cxf-xjc-swaggerdoc/tts-cxf-xjc-swaggerdoc_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tts-cxf-xjc-swaggerdoc/tts-cxf-xjc-swaggerdoc_test.iml" group="tts-cxf-xjc-swaggerdoc" />
+    </modules>
+  </component>
+</project>
